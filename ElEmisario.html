@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"-->
+    <link rel='stylesheet' id='sage/css-css' href='https://ciudadseva.com/wp-content/themes/ciudadseva2021/assets/styles/main.css' type='text/css' media='all' />
+  <link rel="stylesheet" href="estiloweb.css">
+  </head>
+  <body>
+        <style>
+       body {
+        background-color: #0e0e0e;
+        color: #f5e2c8;
+      }
+      .navbar, footer {
+        background-color: #ff6a00 !important;
+      }
+      .card {
+        background-color: #1a1a1a;
+        border: 1px solid #ff6a00;
+      }
+      .btn-primary {
+        background-color: #ff6a00;
+        border-color: #ff6a00;
+      }
+      .btn-primary:hover {
+        background-color: #ff8125;
+        border-color: #ff8125;
+      }
+      .carousel-item img {
+        object-fit: cover;
+        height: 280px;
+      }
+    
+    </style>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm mb-4">
+      <div class="container">
+        <a class="navbar-brand fw-bold">El Emisario Web</a>
+      </div>
+    </nav>
+
+
+    <div class="container py-5">
+      <div class="row g-2">
+
+
+        <div class="col-md-2">
+          <div class="card bg-secondary text-light shadow-lg h-100">
+            <div class="card-body">
+              <h1 class="card-title">El Emisario de Ray Bradbury</h1>
+              <p class="card-text">Un <a href="https://ciudadseva.com/texto/el-emisario/" class="link-light">cuento</a> de suspenso con un giro aterrador</p>
+              <h3 class="card-subtitle mt-3">Donde un niño solo tiene contacto con el mundo exterior a través de su perro quien le trae</h3>
+            </div>
+            <div class="row-right-12">
+       
+             
+             <img src=".vscode/ray.jpg" alt="foto" width="200px">
+             </div>
+          </div>
+          
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light shadow-lg h-100">
+            <div class="card-body">
+
+              <a href="https://www.colaboratorio3.org/mod/assign/view.php?id=1941" class="btn btn-outline-light mb-3">&larr; Volver</a>
+
+              <h2 class="mt-3">Temática</h2>
+              <p>Basado en el cuento "El Emisario" de Ray Bradbury. Buscamos recrear la atmósfera oscura y melancólica: colores naranja quemado y negro, ritmo pausado y un toque de misterio.</p>
+
+              <h2>Proceso de producción</h2>
+              <ol>
+                <li>Lectura y selección de escenas clave.</li>
+                <li>Diseño gráfico: paleta naranja/negro, imágenes secuenciadas (img0...img19).</li>
+                <li>Programación en p5.js: escenas, decisiones, efectos sonoros y música.</li>
+                <li>Integración en la web con Bootstrap y un iframe para ejecutar el sketch.</li>
+              </ol>
+
+             
+
+              <h2 class="mt-4">Integrantes</h2>
+              <ul>
+                <li>Rosario Arri</li>
+                <li>Hernan Cortéz</li>
+              </ul>
+
+              <h2>Notas</h2>
+              <p>El sketch carga imágenes y audios en <code>preload()</code> (ej.: <code>loadImage("data/img"+i+".jpg")</code>, <code>loadSound("data/Intro.mp3")</code>).</p>
+
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-6">
+          <div class="card bg-secondary text-light shadow-lg h-100">
+            <div class="card-body">
+              <h3>Decide el destino y quizás Martín tenga un final feliz</h3>
+              <h1 class="mt-3">¡Juega nuestra aventura gráfica!</h1>
+                
+                   <div class="d-flex justify-content-center mt-4">
+              <iframe src="p5s/index.html" width="640" height="490" frameborder="0" class="border border-warning rounded"></iframe>
+ <div class="card bg-dark border-light mt-3">
+                
+                  </div>  
+                
+             
+            </div>
+          </div>
+          <div class="card-body">
+                  <h3 class="card-text-bold">Sabias que...</h3>
+                  <p> Hay una serie de todos los cuentos de Ray Bradbury incluyendo este?</p>
+                  <p>La serie se llama "El teatro de Ray Bradbury", y "El emisario" es reinterpretado en el capitulo 3 de la 2da temporada </p>
+                  <button class="btn btn-primary"><a href="https://www.youtube.com/watch?v=JzlOX-PMMg4">Miralo</a></button>
+                </div>
+              </div>
+        </div>
+      </div>
+       <footer class="text-center text-dark py-3 mt-5">
+      <strong>Proyecto PMIW - TPFINAL</strong>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="tpfinalparte1.js"></script>
+
+  </body>
+</html>
+
